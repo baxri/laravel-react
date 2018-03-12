@@ -7,6 +7,7 @@
 
 require('./bootstrap');
 
+
 /**
  * Next, we will create a fresh React component instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -15,6 +16,7 @@ require('./bootstrap');
 
 require('./components/Example');
 
-console.log("it works!");
+console.log("it works now!");
+
 
 

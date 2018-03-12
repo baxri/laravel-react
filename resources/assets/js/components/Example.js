@@ -1,27 +1,24 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import Button from './Button';
+import Input from './input';
 
 export default class Example extends Component {
-
-    constructor(){
-        super();
-        this.state = {
-            fullname : 'Giorgi Bibilashvili',
-        };
-    }
-
-    changeEvent(e){
-        this.setState({
-            fullname : e.target.value
-        });
-    }
-
     render() {
         return (
-            <div>
-                <h1>Hello, world!</h1>
-                <input onChange={(e) => this.changeEvent(e)} value={this.state.fullname} />
-                <p>{this.state.fullname}</p>
+            <div className="container-fluid">
+                <div className="row justify-content-center">
+                    <div className="col-md-8">
+                        <div className="card">
+                            <div className="card-header">Example Component</div>
+
+                            <div className="card-body">
+                                <Button/>
+                                <Input/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         );
     }

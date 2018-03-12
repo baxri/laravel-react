@@ -10,6 +10,7 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    <link href="/css/app.css" rel="stylesheet" type="text/css">
     <!-- Styles -->
 </head>
 <body>
@@ -26,10 +27,11 @@
     @endif
 
     <div class="content">
-        <div id="example"></div>
+        <div id="example" name="Laravel"></div>
     </div>
 </div>
 
 <script src="/js/app.js"></script>
+
 </body>
 </html>
